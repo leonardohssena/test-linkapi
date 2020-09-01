@@ -1,0 +1,41 @@
+{
+  "name": "test-linkapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/leonardohssena/test-linkapi.git",
+  "author": "Leonardo Sena <leonardohssena@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "local": "export NODE_ENV='local' && nodemon --exec babel-node src/index.js",
+    "start": "babel-node src/index.js",
+    "debug": "babel-node-debug src/index.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.22",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "ramda": "^0.27.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "nodemon": "^2.0.4"
+  }
+}
+

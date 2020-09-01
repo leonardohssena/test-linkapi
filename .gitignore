@@ -1,0 +1,20 @@
+# Dependency directories
+node_modules
+.npm
+
+# Locks File
+*.lock
+*-lock.json
+
+# Logs 
+*.log 
+ 
+# IDE's 
+.vscode/ 
+.idea/ 
+ 
+# Dependency directories 
+node_modules/ 
+
+# Yarn Integrity file 
+.yarn-integrity 
