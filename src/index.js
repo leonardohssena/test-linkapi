@@ -5,6 +5,7 @@ import express from 'express'
 import helmet from 'helmet'
 import passport from 'passport'
 
+import config from './config'
 import {
   pipeline,
   sort,
@@ -13,6 +14,8 @@ import {
 
 import initDatabase from './initDatabase'
 import initRoutes from './initRoutes'
+
+import { dealsPipedriveToBlingOrders } from './apis'
 
 const app = express()
 const PORT = process.env.PORT || 3001
@@ -36,5 +39,7 @@ initDatabase()
 initRoutes(app)
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT} in ${process.env.NODE_ENV} mode.`))
+
+if (config.updateDatabase) dealsPipedriveToBlingOrders()
 
 app.use(unauthorized)

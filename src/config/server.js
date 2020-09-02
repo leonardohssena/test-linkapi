@@ -1,4 +1,3 @@
 export default {
-  mongoDB: process.env.mongoDB,
-  secret: process.env.secret
+  mongoDB: process.env.mongoDB
 }
