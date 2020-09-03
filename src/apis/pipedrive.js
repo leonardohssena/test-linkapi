@@ -43,6 +43,7 @@ const getProductsInDeal = async (dealId) => {
 }
 
 const getAllDeals = async () => {
+  console.log('Finding Deals')
   const params = {
     status: 'won'
   }
@@ -54,6 +55,7 @@ const getAllDeals = async () => {
       products
     }
   }))
+  console.log('Finded', deals.length, 'Deals')
   return deals
 }
 

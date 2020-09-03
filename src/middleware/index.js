@@ -1,3 +1,6 @@
+export { default as autoInject } from './autoInject'
+export { default as filter } from './filter'
+export { default as paginate } from './paginate'
 export { default as pipeline } from './pipeline'
 export { default as sort } from './sort'
 export { default as unauthorized } from './unauthorized'

@@ -7,6 +7,7 @@ import passport from 'passport'
 
 import config from './config'
 import {
+  paginate,
   pipeline,
   sort,
   unauthorized
@@ -32,6 +33,7 @@ app.use(passport.session())
 
 app.use(helmet())
 
+app.use(paginate)
 app.use(pipeline)
 app.use(sort)
 
